@@ -67,11 +67,11 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
 
-TARGET_PREBUILT_KERNEL = device/samsung/i9103/kernel
+#TARGET_PREBUILT_KERNEL = device/samsung/i9103/kernel
 
-#TARGET_KERNEL_SOURCE := kernel/samsung/n1
-#TARGET_KERNEL_CONFIG := gk_i9103_defconfig
-# TARGET_KERNEL_SELINUX_CONFIG := selinux_config
+TARGET_KERNEL_SOURCE := kernel/samsung/n1
+TARGET_KERNEL_CONFIG := gk_i9103_defconfig
+#TARGET_KERNEL_SELINUX_CONFIG := selinux_config
 # TARGET_KERNEL_TOOLCHAIN := prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-eabi-4.7/bin/arm-eabi-
 
 TARGET_NO_KERNEL := false
@@ -89,7 +89,7 @@ endif
 BOARD_HARDWARE_CLASS := hardware/samsung/cmhw
 
 # RIL
-#BOARD_PROVIDES_LIBRIL := true
+BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := xmm6260
 BOARD_MOBILEDATA_INTERFACE_NAME := "rmnet0"
 
